@@ -14,15 +14,6 @@ public class Question3 {
 		System.out.print(str);
 	}
 
-	/**
-	 * Find the Kth smallest element of an array
-	 *
-	 * @param array
-	 *            : Given array
-	 * @param k
-	 *            : value of K
-	 * @return : Kth smallest element
-	 */
 	public static int findKthSmallestElement(int[] array, int k) {
 		PriorityQueue priorityQueue = new PriorityQueue();
 		for (int i = 0; i < array.length; i++) {
@@ -37,12 +28,6 @@ public class Question3 {
 		return currentNo;
 	}
 
-	/**
-	 * Utility method to print all elements of an array
-	 *
-	 * @param arr
-	 *            : Array to print
-	 */
 	private static void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			print(arr[i] + " ");
@@ -52,7 +37,7 @@ public class Question3 {
 	public static void main(String args[]) {
 		Random random = new Random();
 		Scanner scanner = new Scanner(System.in);
-		println("How many numbers you want to add to the array : ");
+		println("length of numbers you want to add to the array : ");
 		int total_num = scanner.nextInt();
 		int[] num_array = new int[total_num];
 		for (int i = 0; i < total_num; i++)
